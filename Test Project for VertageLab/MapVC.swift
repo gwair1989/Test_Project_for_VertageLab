@@ -6,19 +6,19 @@
 //
 
 import UIKit
-import MapKit
 import GoogleMaps
 
 class MapVC: UIViewController, UITableViewDataSource {
 
-    
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: UIView!
     
+    var userName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = userName
         GMSServices.provideAPIKey("\(K.key)")
         let camera = GMSCameraPosition.camera(withLatitude: 50.450555, longitude: 30.5210808, zoom: 18.0)
         let mapView = GMSMapView.map(withFrame: self.mapView.frame, camera: camera)
