@@ -8,38 +8,53 @@
 import UIKit
 import GoogleMaps
 
-class MapVC: UIViewController, UITableViewDataSource {
-
-
+class MapVC: UIViewController,TPManagerDelegate, UITableViewDataSource {
+    
+    
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var myMapView: UIView!
     
     var userName = ""
+    let tpManager = TPManager()
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tpManager.delegate = self
         navigationItem.title = userName
-        GMSServices.provideAPIKey("\(K.key)")
-        let camera = GMSCameraPosition.camera(withLatitude: 50.450555, longitude: 30.5210808, zoom: 18.0)
-        let mapView = GMSMapView.map(withFrame: self.mapView.frame, camera: camera)
-        self.mapView.addSubview(mapView)
-        createsMarker(lat: 50.450555, lon: 30.5210808, names: "Independence Square", map: mapView)
+        tpManager.requestData()
         tableView.dataSource = self
     }
     
     //    MARK: - Creates marker
-    func createsMarker(lat:Double, lon:Double, names:String, map:GMSMapView){
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        marker.title = names
-        marker.map = map
+    func getData(data: [TPModel]) {
+        
+        let camera = GMSCameraPosition.camera(withLatitude: data[1].lat, longitude: data[1].lng, zoom: 14.5)
+        let mapView = GMSMapView.map(withFrame: self.myMapView.frame, camera: camera)
+        
+        let marker0 = GMSMarker()
+        marker0.position = CLLocationCoordinate2D(latitude: data[0].lat, longitude: data[0].lng)
+        marker0.title = data[0].name
+        marker0.map = mapView
+        self.myMapView.addSubview(mapView)
+        
+        let marker1 = GMSMarker()
+        marker1.position = CLLocationCoordinate2D(latitude: data[1].lat, longitude: data[1].lng)
+        marker1.title = data[1].name
+        marker1.map = mapView
+        
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: data[2].lat, longitude: data[2].lng)
+        marker2.title = data[2].name
+        marker2.map = mapView
     }
     
     
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,4 +63,6 @@ class MapVC: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = "1: Independence Square"
         return cell
     }
+    
+    
 }

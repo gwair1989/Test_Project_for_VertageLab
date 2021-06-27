@@ -9,10 +9,11 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+
     @IBOutlet weak var loginEmailTF: UITextField!
-    
     @IBOutlet weak var passwordLoginTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,9 @@ class LoginVC: UIViewController {
     @IBAction func pressedLogin(_ sender: UIButton) {
         performSegue(withIdentifier: "toMapVC", sender: self)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
-        
-        
+ 
         guard let login = loginEmailTF.text else{return}
 //        Here we save the data to the FB database
         if segue.identifier == "toMapVC"{

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4F898D2688870D00ED7AAE /* TPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F898C2688870D00ED7AAE /* TPModel.swift */; };
+		1F4F89902688873400ED7AAE /* TPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F898F2688873400ED7AAE /* TPData.swift */; };
+		1F4F89922688874D00ED7AAE /* TPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89912688874D00ED7AAE /* TPManager.swift */; };
 		1F6751E52687B077008981DB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6751E42687B077008981DB /* Keys.swift */; };
 		1F70FCC126873DB700D8B52A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70FCC026873DB700D8B52A /* MapVC.swift */; };
 		1F9D469A26846F7A00D2CEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D469926846F7A00D2CEE8 /* AppDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4F898C2688870D00ED7AAE /* TPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPModel.swift; sourceTree = "<group>"; };
+		1F4F898F2688873400ED7AAE /* TPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPData.swift; sourceTree = "<group>"; };
+		1F4F89912688874D00ED7AAE /* TPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPManager.swift; sourceTree = "<group>"; };
 		1F6751E42687B077008981DB /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		1F70FCC026873DB700D8B52A /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		1F9D469626846F7A00D2CEE8 /* Test Project for VertageLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Project for VertageLab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4F898E2688872100ED7AAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F898C2688870D00ED7AAE /* TPModel.swift */,
+				1F4F898F2688873400ED7AAE /* TPData.swift */,
+				1F4F89912688874D00ED7AAE /* TPManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1F9D468D26846F7A00D2CEE8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,7 @@
 				1F9D46A426846F7D00D2CEE8 /* LaunchScreen.storyboard */,
 				1F9D46A726846F7D00D2CEE8 /* Info.plist */,
 				1F6751E42687B077008981DB /* Keys.swift */,
+				1F4F898E2688872100ED7AAE /* Model */,
 			);
 			path = "Test Project for VertageLab";
 			sourceTree = "<group>";
@@ -212,10 +229,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9D469E26846F7A00D2CEE8 /* LoginVC.swift in Sources */,
+				1F4F89922688874D00ED7AAE /* TPManager.swift in Sources */,
 				1F70FCC126873DB700D8B52A /* MapVC.swift in Sources */,
 				1F9D469A26846F7A00D2CEE8 /* AppDelegate.swift in Sources */,
 				1F9D469C26846F7A00D2CEE8 /* SceneDelegate.swift in Sources */,
 				1F6751E52687B077008981DB /* Keys.swift in Sources */,
+				1F4F898D2688870D00ED7AAE /* TPModel.swift in Sources */,
+				1F4F89902688873400ED7AAE /* TPData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

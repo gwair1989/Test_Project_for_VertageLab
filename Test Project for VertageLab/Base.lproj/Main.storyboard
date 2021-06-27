@@ -194,7 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IkI-YP-QpO"/>
                     <connections>
-                        <outlet property="mapView" destination="nQP-xv-Wao" id="Tq1-B2-Vki"/>
+                        <outlet property="myMapView" destination="nQP-xv-Wao" id="Tq1-B2-Vki"/>
                         <outlet property="tableView" destination="Gv8-6N-GN7" id="Qel-it-SAl"/>
                     </connections>
                 </viewController>
