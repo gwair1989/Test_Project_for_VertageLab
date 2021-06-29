@@ -14,7 +14,7 @@ protocol TPManagerDelegate: AnyObject {
 class TPManager {
    weak var delegate:TPManagerDelegate?
     let apiURL = "https://2fjd9l3x1l.api.quickmocker.com/kyiv/places"
-    var closure: (([TPModel]) -> ())?
+    
     
     
     func requestData(){
@@ -40,7 +40,7 @@ class TPManager {
                 TPModel(id: decodeData.places[1].id, name: decodeData.places[1].name, lat: decodeData.places[1].lat, lng: decodeData.places[1].lng),
                 TPModel(id: decodeData.places[2].id, name: decodeData.places[2].name, lat: decodeData.places[2].lat, lng: decodeData.places[2].lng)
             ]
-            closure?(tpModel)
+            
             return tpModel
         } catch {
             print(error.localizedDescription)

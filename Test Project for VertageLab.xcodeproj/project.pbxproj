@@ -52,6 +52,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0983C9268B56D9004D3D7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F9D469D26846F7A00D2CEE8 /* LoginScreen.swift */,
+				1F70FCC026873DB700D8B52A /* MapScreen.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F0983CA268B56EE004D3D7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F9D469F26846F7A00D2CEE8 /* Main.storyboard */,
+				1F9D46A426846F7D00D2CEE8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1F4F898E2688872100ED7AAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,14 +103,12 @@
 			children = (
 				1F9D469926846F7A00D2CEE8 /* AppDelegate.swift */,
 				1F9D469B26846F7A00D2CEE8 /* SceneDelegate.swift */,
-				1F9D469D26846F7A00D2CEE8 /* LoginScreen.swift */,
-				1F9D469F26846F7A00D2CEE8 /* Main.storyboard */,
-				1F70FCC026873DB700D8B52A /* MapScreen.swift */,
+				1F4F898E2688872100ED7AAE /* Model */,
+				1F0983CA268B56EE004D3D7C /* View */,
+				1F0983C9268B56D9004D3D7C /* Controller */,
 				1F9D46A226846F7D00D2CEE8 /* Assets.xcassets */,
-				1F9D46A426846F7D00D2CEE8 /* LaunchScreen.storyboard */,
 				1F9D46A726846F7D00D2CEE8 /* Info.plist */,
 				1F6751E42687B077008981DB /* Keys.swift */,
-				1F4F898E2688872100ED7AAE /* Model */,
 			);
 			path = "Test Project for VertageLab";
 			sourceTree = "<group>";
