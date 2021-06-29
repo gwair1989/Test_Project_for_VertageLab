@@ -1,5 +1,5 @@
 //
-//  MapVC.swift
+//  MapScreen.swift
 //  Test Project for VertageLab
 //
 //  Created by Aleksandr Khalupa on 26.06.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import GoogleMaps
 
-class MapVC: UIViewController,TPManagerDelegate, UITableViewDataSource {
+class MapScreen: UIViewController,TPManagerDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,7 +16,8 @@ class MapVC: UIViewController,TPManagerDelegate, UITableViewDataSource {
     
     var userName = ""
     let tpManager = TPManager()
-    
+    lazy var tpModel:[TPModel] = []
+
 
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class MapVC: UIViewController,TPManagerDelegate, UITableViewDataSource {
         navigationItem.title = userName
         tpManager.requestData()
         tableView.dataSource = self
+        
     }
     
     //    MARK: - Creates marker
@@ -48,21 +50,32 @@ class MapVC: UIViewController,TPManagerDelegate, UITableViewDataSource {
         marker2.position = CLLocationCoordinate2D(latitude: data[2].lat, longitude: data[2].lng)
         marker2.title = data[2].name
         marker2.map = mapView
+        
+        
+        tpModel = data
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.tableView.scrollToRow(at: IndexPath(row: self.tpModel.count - 1, section: 0), at: .top, animated: true)
+        }
+        
     }
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 3
+        return tpModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = "1: Independence Square"
+        
+        cell.textLabel?.text = "\(tpModel[indexPath.row].id).  \(tpModel[indexPath.row].name)"
         return cell
     }
+    
+
     
     
 }

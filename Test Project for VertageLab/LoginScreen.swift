@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  LoginScreen.swift
 //  Test Project for VertageLab
 //
 //  Created by Aleksandr Khalupa on 24.06.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginScreen: UIViewController, UITextFieldDelegate {
 
 
     @IBOutlet weak var loginEmailTF: UITextField!
@@ -20,6 +20,8 @@ class LoginVC: UIViewController {
         loginButton.layer.borderWidth = 0.3
         loginEmailTF.layer.borderWidth = 0.3
         passwordLoginTF.layer.borderWidth = 0.3
+        passwordLoginTF.delegate = self
+        loginEmailTF.delegate = self
     }
 
     @IBAction func pressedLogin(_ sender: UIButton) {
@@ -31,9 +33,14 @@ class LoginVC: UIViewController {
         guard let login = loginEmailTF.text else{return}
 //        Here we save the data to the FB database
         if segue.identifier == "toMapVC"{
-            let mapVC = segue.destination as! MapVC
+            let mapVC = segue.destination as! MapScreen
             mapVC.userName = login
         }
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+       return true
+    }
+    
 }
 

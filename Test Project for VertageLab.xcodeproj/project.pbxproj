@@ -11,10 +11,10 @@
 		1F4F89902688873400ED7AAE /* TPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F898F2688873400ED7AAE /* TPData.swift */; };
 		1F4F89922688874D00ED7AAE /* TPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89912688874D00ED7AAE /* TPManager.swift */; };
 		1F6751E52687B077008981DB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6751E42687B077008981DB /* Keys.swift */; };
-		1F70FCC126873DB700D8B52A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70FCC026873DB700D8B52A /* MapVC.swift */; };
+		1F70FCC126873DB700D8B52A /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70FCC026873DB700D8B52A /* MapScreen.swift */; };
 		1F9D469A26846F7A00D2CEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D469926846F7A00D2CEE8 /* AppDelegate.swift */; };
 		1F9D469C26846F7A00D2CEE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D469B26846F7A00D2CEE8 /* SceneDelegate.swift */; };
-		1F9D469E26846F7A00D2CEE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D469D26846F7A00D2CEE8 /* LoginVC.swift */; };
+		1F9D469E26846F7A00D2CEE8 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D469D26846F7A00D2CEE8 /* LoginScreen.swift */; };
 		1F9D46A326846F7D00D2CEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9D46A226846F7D00D2CEE8 /* Assets.xcassets */; };
 		1FD9219C2688576900E3123E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9D469F26846F7A00D2CEE8 /* Main.storyboard */; };
 		1FD9219D2688577000E3123E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9D46A426846F7D00D2CEE8 /* LaunchScreen.storyboard */; };
@@ -26,11 +26,11 @@
 		1F4F898F2688873400ED7AAE /* TPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPData.swift; sourceTree = "<group>"; };
 		1F4F89912688874D00ED7AAE /* TPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPManager.swift; sourceTree = "<group>"; };
 		1F6751E42687B077008981DB /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		1F70FCC026873DB700D8B52A /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		1F70FCC026873DB700D8B52A /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		1F9D469626846F7A00D2CEE8 /* Test Project for VertageLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Project for VertageLab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9D469926846F7A00D2CEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F9D469B26846F7A00D2CEE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F9D469D26846F7A00D2CEE8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1F9D469D26846F7A00D2CEE8 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		1F9D46A026846F7A00D2CEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F9D46A226846F7D00D2CEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F9D46A526846F7D00D2CEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 			children = (
 				1F9D469926846F7A00D2CEE8 /* AppDelegate.swift */,
 				1F9D469B26846F7A00D2CEE8 /* SceneDelegate.swift */,
-				1F9D469D26846F7A00D2CEE8 /* LoginVC.swift */,
+				1F9D469D26846F7A00D2CEE8 /* LoginScreen.swift */,
 				1F9D469F26846F7A00D2CEE8 /* Main.storyboard */,
-				1F70FCC026873DB700D8B52A /* MapVC.swift */,
+				1F70FCC026873DB700D8B52A /* MapScreen.swift */,
 				1F9D46A226846F7D00D2CEE8 /* Assets.xcassets */,
 				1F9D46A426846F7D00D2CEE8 /* LaunchScreen.storyboard */,
 				1F9D46A726846F7D00D2CEE8 /* Info.plist */,
@@ -228,9 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9D469E26846F7A00D2CEE8 /* LoginVC.swift in Sources */,
+				1F9D469E26846F7A00D2CEE8 /* LoginScreen.swift in Sources */,
 				1F4F89922688874D00ED7AAE /* TPManager.swift in Sources */,
-				1F70FCC126873DB700D8B52A /* MapVC.swift in Sources */,
+				1F70FCC126873DB700D8B52A /* MapScreen.swift in Sources */,
 				1F9D469A26846F7A00D2CEE8 /* AppDelegate.swift in Sources */,
 				1F9D469C26846F7A00D2CEE8 /* SceneDelegate.swift in Sources */,
 				1F6751E52687B077008981DB /* Keys.swift in Sources */,

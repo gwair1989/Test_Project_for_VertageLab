@@ -8,58 +8,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Test_Project_for_VertageLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginScreen" customModule="Test_Project_for_VertageLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-uS-sct">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="341.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="298.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e27-HM-cU9">
-                                <rect key="frame" x="0.0" y="554.5" width="414" height="341.5"/>
+                                <rect key="frame" x="0.0" y="597.5" width="414" height="298.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kAx-E9-AxK">
-                                <rect key="frame" x="0.0" y="341.5" width="414" height="213"/>
+                                <rect key="frame" x="0.0" y="298.5" width="414" height="299"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-8E-VK1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XL-1N-GyP">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dU-99-L8D">
-                                                        <rect key="frame" x="0.0" y="0.0" width="69" height="142"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="69" height="199.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y37-PJ-4jf">
-                                                        <rect key="frame" x="69" y="0.0" width="276" height="142"/>
+                                                        <rect key="frame" x="69" y="0.0" width="276" height="199.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA3-uX-yRx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="24.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="44"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCg-Ss-t1e">
-                                                                <rect key="frame" x="0.0" y="24.5" width="276" height="34"/>
+                                                                <rect key="frame" x="0.0" y="44" width="276" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-4W-3lF">
-                                                                <rect key="frame" x="0.0" y="58.5" width="276" height="25"/>
+                                                                <rect key="frame" x="0.0" y="78" width="276" height="43.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vXF-fo-eZ8">
-                                                                <rect key="frame" x="0.0" y="83.5" width="276" height="34"/>
+                                                                <rect key="frame" x="0.0" y="121.5" width="276" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HH5-XG-9ez">
-                                                                <rect key="frame" x="0.0" y="117.5" width="276" height="24.5"/>
+                                                                <rect key="frame" x="0.0" y="155.5" width="276" height="44"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
                                                         </subviews>
@@ -69,7 +69,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="In2-k1-2Eu">
-                                                        <rect key="frame" x="345" y="0.0" width="69" height="142"/>
+                                                        <rect key="frame" x="345" y="0.0" width="69" height="199.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
@@ -88,10 +88,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcJ-TQ-2M4">
-                                        <rect key="frame" x="0.0" y="142" width="414" height="71"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="414" height="99.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RN-jz-BqM">
-                                                <rect key="frame" x="161.5" y="20.5" width="91" height="30"/>
+                                                <rect key="frame" x="161.5" y="34.5" width="91" height="30"/>
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -128,7 +128,7 @@
                             <constraint firstAttribute="trailing" secondItem="D1x-uS-sct" secondAttribute="trailing" id="bOF-ZC-cgX"/>
                             <constraint firstItem="e27-HM-cU9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bOS-YG-rIO"/>
                             <constraint firstItem="kAx-E9-AxK" firstAttribute="top" secondItem="D1x-uS-sct" secondAttribute="bottom" id="hL6-Tz-aF3"/>
-                            <constraint firstItem="D1x-uS-sct" firstAttribute="height" secondItem="kAx-E9-AxK" secondAttribute="height" multiplier="1.6" id="m4O-xR-07J"/>
+                            <constraint firstItem="D1x-uS-sct" firstAttribute="height" secondItem="kAx-E9-AxK" secondAttribute="height" id="m4O-xR-07J"/>
                             <constraint firstItem="D1x-uS-sct" firstAttribute="width" secondItem="kAx-E9-AxK" secondAttribute="width" id="q3y-9w-cHI"/>
                             <constraint firstItem="e27-HM-cU9" firstAttribute="top" secondItem="kAx-E9-AxK" secondAttribute="bottom" id="sHB-rV-H9C"/>
                             <constraint firstItem="kAx-E9-AxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tUo-ni-SPv"/>
@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="489.85507246376818" y="93.75"/>
         </scene>
-        <!--MapVC-->
+        <!--Map Screen-->
         <scene sceneID="ula-4m-1ls">
             <objects>
-                <viewController id="gKX-Bw-2di" customClass="MapVC" customModule="Test_Project_for_VertageLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gKX-Bw-2di" customClass="MapScreen" customModule="Test_Project_for_VertageLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b43-Eh-qyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
