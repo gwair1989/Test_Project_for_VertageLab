@@ -56,7 +56,6 @@ class MapScreen: UIViewController,TPManagerDelegate, UITableViewDataSource {
         
         DispatchQueue.main.async {
             self.tableView.reloadData()
-            self.tableView.scrollToRow(at: IndexPath(row: self.tpModel.count - 1, section: 0), at: .top, animated: true)
         }
         
     }
